@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Carlene Keegan | The Perrella Group</title>
+    <meta name="description" content="Carlene Keegan helps buyers and sellers in James Island and the greater Charleston area. First-time buyers, relocations, and luxury homes.">
+    <meta property="og:title" content="About Carlene Keegan | The Perrella Group">
+    <meta property="og:description" content="Carlene Keegan helps buyers and sellers in James Island and the greater Charleston area. First-time buyers, relocations, and luxury homes.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Carlene Keegan", "url": "https://carleneкеegan.com", "telephone": "845.803.1812", "email": "Carlene@perrellagroup.com", "image": "", "areaServed": [{"@type": "State", "name": "South Carolina"}, {"@type": "City", "name": "James Island"}, {"@type": "City", "name": "Charleston"}, {"@type": "City", "name": "Mount Pleasant"}], "jobTitle": "Real Estate Agent", "knowsAbout": ["First-Time Homebuyers", "Waterfront Properties", "Residential Real Estate", "James Island Real Estate", "Charleston Real Estate"], "yearsOfExperience": 8, "memberOf": {"@type": "Organization", "name": "The Perrella Group", "url": "https://www.perrellagroup.com"}, "description": "Carlene Keegan is a real estate agent serving James Island and the greater Charleston area through The Perrella Group. With 8 years of experience, she specializes in first-time buyers, relocations, and James Island properties. Locally based with referral partners worldwide."}
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">Carlene Keegan <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#neighborhoods">Neighborhoods</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="https://perrellagroup.com/agent/carlene-keegan" target="_blank" rel="noopener noreferrer" class="nav-listings">View Listings</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line"><span class="blog-card-category">About</span></div>
+            <h1>About Carlene Keegan</h1>
+            <p class="article-lede"> Locally servicing the greater Charleston area, with referral partners worldwide</p>
+        </div>
+    </div>
+    <div class="article-body"><p>Hi, I'm Carlene Keegan, a REALTOR® with The Perrella Group based on James Island, SC. I genuinely love where I live — the marsh views, the laid-back pace, and the fact that I'm just minutes from both Folly Beach and downtown Charleston. My office is in Mount Pleasant, which means my commute doubles as one of the most scenic drives the Charleston area has to offer. Real estate has been a passion of mine for as long as I can remember — I was the kid pulling up listings online and dragging my mom over to look at them with me. Somehow, that early curiosity turned into a career I'm deeply grateful for.</p><p>Before joining The Perrella Group, I spent three years teaching in Charleston County. That chapter shaped how I show up for clients today — with patience, clear communication, and a genuine desire to help people understand the process. A naturally competitive spirit from years of playing sports means I work hard at the table and advocate strongly on your behalf, whether you're a first-time buyer, relocating to the Lowcountry, or simply ready for your next chapter.</p><p>There's something especially meaningful about helping someone turn a monthly rent payment into equity and a place they can truly call home. I've had the privilege of guiding many buyers through that milestone here in Charleston, and every closing still feels like a win worth celebrating.</p><p>When I'm not working, you'll find me outside soaking up everything Charleston has to offer, exploring a new restaurant with friends, or at home with my two dogs. A few things that make me, me: I'm a lifelong Billy Joel fan, I can't say no to pizza, pasta, or a good bagel, I have a soft spot for coastal cottage architecture, and — fun fact — I'm ambidextrous. My guilty pleasure is Bravo television, and my dream job (after real estate, obviously) is professional pickleball player. I'd love the opportunity to help you find your place in Charleston.</p>
+
+    </div>
+
+    <footer>
+        <div class="footer-brand">Carlene Keegan · The Perrella Group</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Carlene Keegan.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="blog/index.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>
